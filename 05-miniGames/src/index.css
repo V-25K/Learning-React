@@ -1,0 +1,176 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #F4EEE0;
+  background-color: #4F4557;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #393646;
+}
+
+header h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  padding: 1.4rem 0;
+  letter-spacing: 0.2rem;
+}
+
+main {
+  height: 79%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 13.5%;
+  left: 0;
+  overflow-y: scroll;
+}
+
+main .gameBox {
+  position: relative;
+  height: 40%;
+  width: 25%;
+  background-color: white;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+main .gameBox:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 20px 2px #fff;
+}
+
+.gameBox h3 {
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  color: #F4EEE0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #393646;
+  -webkit-backdrop-filter: brightness(100);
+  backdrop-filter: brightness(100);
+  justify-content: center;  
+  border-radius: 0 0 12px 12px;
+}
+
+.gameBox p{
+  width: 100%;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  justify-content: center;
+  border-radius:12px;
+  font-size: 1.6rem;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.description{
+  display: none;
+}
+
+.gameBox:hover .description{
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #393646;
+}
+
+footer h3 {
+  text-align: center;
+  padding: 1% 0;
+  letter-spacing: 0.1rem;
+}
+
+/*for Tablet Screens*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    top: 13.5%;
+  }
+
+  main .gameBox {
+    height: 40%;
+    width: 42%;
+    margin: 20px 24px;
+  }
+}
+
+/*for Mobile screens*/
+@media screen and (max-width: 767px) {
+  main {
+    top: 13.5%;
+  }
+
+  main .gameBox {
+    height: 30%;
+    width: 80%;
+    margin: 20px 18px;
+  }
+
+  footer {
+    display: none;
+  }
+}
