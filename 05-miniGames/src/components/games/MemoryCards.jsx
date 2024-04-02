@@ -107,7 +107,7 @@ const CreateCards = ({ card, handleChoice, flipped, disabled }) => {
         <p className="front">{card.img}</p>
         <img
           className="back"
-          src="https://img.freepik.com/premium-photo/abstract-background-with-pattern-squares-pink-purple-colors_743855-52140.jpg?size=626&ext=jpg&ga=GA1.1.239331790.1711459612&semt=sph"
+          src="https://images.pexels.com/photos/67642/blossom-bloom-flower-blue-67642.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="cards back pattern"
           onClick={handleClick}
         />

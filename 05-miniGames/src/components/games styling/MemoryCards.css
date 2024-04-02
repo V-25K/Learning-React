@@ -112,9 +112,6 @@ aside button {
 
 /*for Mobile screens*/
 @media screen and (max-width: 767px) {
-  main {
-    flex-direction: column-reverse;
-  }
 
   aside {
     height: 20%;
@@ -134,7 +131,7 @@ aside button {
   }
 
   .cardGame-main-container {
-    height: 76%;
+    height: 58%;
     width: 90%;
     justify-items: center;
   }
